@@ -16,6 +16,8 @@
     <script type='text/javascript' src="js/jquery-migrate.min.js"></script>
     <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
     <script type='text/javascript' src="js/scripts.min.js"></script>
+    <script src="ss-master/dist/js/bind-polyfill.js"></script>
+    <script src="ss-master/dist/js/smooth-scroll.js"></script>
 
 </head>
 
@@ -24,17 +26,17 @@
     <div class="body-reveal">
         <header class="white">
             <ul class="main-navigation" style="font-size:75%;position:relative;margin-left:auto;margin-right:auto;background-color:rgba(33,44,55,0.7);">
-                <li ><a href="#AboutUs">Home</a>
+                <li><a data-scroll href="#AboutUs">Home</a>
                 </li>
-                <li ><a href="#AboutUs">About Us</a>
+                <li><a data-scroll href="#AboutUs">About Us</a>
                 </li>
-                <li><a href="#History">History</a>
+                <li><a data-scroll href="#History">History</a>
                 </li>
-                <li><a href="#">Impact</a>
+                <li><a data-scroll href="#Impact">Impact</a>
                 </li>
-                <li><a href="#">Get Involved</a>
+                <li><a data-scroll href="#GetInvolved">Get Involved</a>
                 </li>
-                <li><a href="#">Contact</a>
+                <li><a data-scroll href="#Contact">Contact</a>
                 </li>
             </ul>
         </header>
@@ -345,6 +347,10 @@
         </footer>
         </div>
     </div>
+
+    <script>
+        smoothScroll.init();
+    </script>
 
 </body>
 
