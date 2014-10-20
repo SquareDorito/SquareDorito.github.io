@@ -120,7 +120,5 @@ if(isset($_POST['submitted']))
 // ]]>
 </script>
 
-<?php include('../includes/footer.php'); ?
-
 </body>
 </html>
