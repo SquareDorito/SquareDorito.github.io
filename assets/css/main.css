@@ -2435,7 +2435,7 @@
 					border-top: solid 2px;
 					font-size: 2.5em;
 					font-weight: 900;
-					letter-spacing: 0.2em;
+					letter-spacing: 0.05em;
 					margin: 0;
 					padding-left: 0.05em;
 					position: relative;
@@ -2443,7 +2443,7 @@
 				}
 
 			#banner .inner p {
-				letter-spacing: 0.1em;
+				letter-spacing: 0.05em;
 				margin: 0;
 				text-transform: uppercase;
 			}
