@@ -2122,12 +2122,12 @@ input, select, textarea {
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
-					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
+					color: white;
+					
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 0.7em;
-					letter-spacing: 0.25em;
+					font-size: 0.8em;
+					letter-spacing: 0.15em;
 					height: 5em;
 					line-height: 5em;
 					-moz-transition: all .25s ease-in-out;
