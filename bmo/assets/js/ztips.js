@@ -8,5 +8,6 @@ $.get('ztips.txt', function(data) {
             counter++;
         }
     }
+    console.log(counter);
     console.log(zips_dict);
 });
