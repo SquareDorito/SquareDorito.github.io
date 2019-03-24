@@ -1,6 +1,7 @@
 $.get('ztips.txt', function(data) {
+    console.log(data);
     var zips_dict = {}
-    var n = data.split("\n");
+    var n = data.length;
     let counter=0;
     for(var i=0;i<n/3;i+=3){
         if(i%2==0){
