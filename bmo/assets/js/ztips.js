@@ -1,7 +1,7 @@
 
 function populate_html(zips_dict) {
     for(var i=0;i<36;i++){
-        $('tips-col1').append('<p><a href="#">'+zips_dict[i]['title']+'</a></p>')
+        $('#tips-col1').append('<p><a href="#">'+zips_dict[i]['title']+'</a></p>')
     }
 }
 
