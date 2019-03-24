@@ -1,7 +1,16 @@
 
 function populate_html(zips_dict) {
     for(var i=0;i<36;i++){
-        $('#tips-col1').append('<p><a href="#" class="button style2 ztip-button">'+zips_dict[i]['title']+'</a></p>')
+        $('#tips-col1').append('<a href="#" class="button style2 ztip-button">'+zips_dict[i]['title']+'</a>')
+    }
+    for(var i=36;i<72;i++){
+        $('#tips-col2').append('<a href="#" class="button style2 ztip-button">'+zips_dict[i]['title']+'</a>')
+    }
+    for(var i=72;i<108;i++){
+        $('#tips-col3').append('<a href="#" class="button style2 ztip-button">'+zips_dict[i]['title']+'</a>')
+    }
+    for(var i=108;i<142;i++){
+        $('#tips-col4').append('<a href="#" class="button style2 ztip-button">'+zips_dict[i]['title']+'</a>')
     }
 }
 
