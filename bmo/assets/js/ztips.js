@@ -1,5 +1,6 @@
 
 function populate_html(zips_dict) {
+    style-string='style="text-transform: none;font-weight:400;letter-spacing:0.015em;width:100%;text-align:center;"';
     for(var i=0;i<36;i++){
         $('#tips-col1').append('<a href="#" class="button style2 ztips">'+zips_dict[i]['title']+'</a>')
     }
