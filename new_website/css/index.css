@@ -212,27 +212,33 @@ h1 {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .navbar a {
-        padding: 10px 10px;
+        padding: 8px 6px;
         font-size: 14px;
     }
     .name {
         margin-top: 0;
-        margin-bottom: -38px;
+        margin-bottom: -35px;
         font-size: 40px;
+    }
+    .container p {
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .navbar a {
-        padding: 8px 10px;
+        padding: 8px 5px;
         font-size: 12px;
     }
     .name {
         margin-top: 0;
         margin-bottom: -30px;
         font-size: 30px;
+    }
+    .container p {
+        font-size: 14px;
     }
 }
 
