@@ -1,56 +1,83 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Ken Noh | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Ken Noh</h1>
-						<p>	
-							Brown University '20 (B.S. in Computer Science) 
-							<br> 
-							Incoming Software Engineer at <a href="https://www.imc.com/us/" target="_blank">IMC Trading</a>
-							<br>
-							Previously: Software Engineering Intern at <a href="https://www.twosigma.com" target="_blank">Two Sigma</a>, <a href="https://www.aibrain.com" target="_blank">AIBrain, Inc.</a>
-						</p>
-						<nav>
-							<ul>
-								<li><a href="resume_080519.pdf" target="_blank" class="fas fa-file-pdf" title="My Resume"></a></li>
-								<li><a href="http://linkedin.com/in/khnoh" target="_blank" class="fab fa-linkedin" title="My LinkedIn"></a></li>
-								<li><a href="http://github.com/squaredorito" target="_blank" class="fab fa-github" title="My Github"></a></li>
-								<li><a href="http://medium.com/kens-blog" target="_blank" class="fab fa-medium" title="My Medium Blog"></a></li>
-								<!--<li><a href="mailto:khnoh@brown.edu" target="_top" class="fas fa-envelope" title="My Email"></a></li>-->
-							</ul>
-						</nav>
-					</header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/f211b4418c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Ken Noh 2020. Design inspired by: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+<body>
+    
+    <div id="particles-js"></div>
+    <div class="centered" id="body">
+        <h1 class="name"> Ken Noh </h1>
+        <div class="navbar" id="myNavBar">
+            <a href="javascript:void(0);">Projects</a>
+            <a href="javascript:void(0);">Other Exp.</a>
+            <a href="javascript:void(0);">Work Exp.</a>
+            <a href="javascript:void(0);" class="active">About</a>
+            <a href="#" style="font-size:15px;" class="icon" onclick="expand()">&#9776;</a>
+        </div>
+        <div class="container">
+            <div class="bodytext" id="About" >
+                <div class="headshot" >
+                    <img src="headshot.JPG">
+                </div>
+                <p >Welcome! I recently graduated from Brown University (B.S. in Computer
+                    Science) and will be joining IMC Trading in August 2020 as a Software Engineer. My primary interests are 
+                    computer systems and networks. 
+                    <br><br>
+                    In my spare time, I enjoy practicing calligraphy and playing cello, guitar, and tennis. I also played on
+                    Brown's ultimate frisbee team and won a D-1 College Championship in 2019!
+                </p>
+            </div>
+            <p class="bodytext" id="Work Exp." style="display:none">
+                I'll be joining <a href="https://www.imc.com/us/" target="_blank">IMC Trading</a> as a Software Engineer in August 2020.
+                <br><br>
+                Currently, I am working part-time for <a href="https://www.merkinvestments.com" target="_blank">Merk Investments</a>,
+                creating an automated FX Trading Python service to enable intraday trading strategies. We are primarily working with
+                <a href="https://www.360t.com/" target="_blank">360T</a>.
+                <br><br>
+                As a Trading Engineering Intern at <a href="https://www.twosigma.com/" target="_blank">Two Sigma</a>, I worked on the Market Making Index Arbitrage team,
+                creating a full-stack application to provide fast & centralized monitoring all of Two Sigma Securities’ high-frequency trading activity.
+                <br><br>
+                As a Software Engineering Intern at <a href="https://aibrain.com/" target="_blank">AIBrain</a>, I experimented with a semantic clustering module using 
+                <a href="https://arxiv.org/abs/1506.06726" target="_blank">Skip-Thought</a> vector embeddings, which was used to trigger self-reorganization of phrase 
+                data stored in the Memory Graph product.
+            </p>
+            <p class="bodytext" id="Other Exp." style="display:none">
+                I pursued an independent study (two semesters) with <a href="http://cs.brown.edu/people/pklein/" target="_blank">Professor Klein</a>, working on optimization algorithms on planar graphs. We were able to 
+                successfully generate tours for the Steiner Traveling Salesman problem. See this <a href="planarity_writeup.pdf" target="_blank">report</a>
+                for work done in our first semester.
+                <br><br>
+                At Brown, I served as an Undergraduate Teaching Assistant for <a href="http://static.cs.brown.edu/courses/csci1410.html" target="_blank">CS1410</a>, 
+                <a href="http://static.cs.brown.edu/courses/csci1420.html" target="_blank">CS1420</a>, and 
+                <a href="https://cs.brown.edu/courses/info/data2040/" target="_blank">DATA2040</a>,
+                where I was responsible for creating assignments, holding hours, and grading.
+                <br><br>
+                I finished first in the Citadel Trading Challenge hosted at Brown University in February 2020. I also finished second in the Jane Street
+                Electronic Trading Challenge in 2018. 
+            </p>
+            <p class="bodytext" id="Projects" style="display:none">
+                Coming soon...
+            </p>
+            <div class="footer">
+                <ul>
+                    <li id="resume"><a href="resume.pdf" target="_blank">resume</a></li>
+                    <li><a href="http://github.com/squaredorito" title="Github" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="http://linkedin.com/in/khnoh"  title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="http://medium.com/kens-blog" title="Medium Blog" target="_blank"><i class="fab fa-medium"></i></a></li>
+                    <li><a href="mailto:kennoh415@gmail.com" title="Email Me" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>
